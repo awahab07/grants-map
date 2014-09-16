@@ -1,0 +1,24 @@
+<tabset>
+    <tab data-heading="Pie Chart" data-select="updateFilteredDataTableArrays()">
+        <!-- Fiscal Year Pills -->
+        <ul class="nav nav-pills ng-hide" data-ng-show="true">
+            <li data-ng-repeat="fiscalYear in availableFiscalYears" data-ng-class="isPillActive(fiscalYear)">
+                <a data-ng-click="changeFiscalYear(fiscalYear)">{{fiscalYear}}</a>
+            </li>
+        </ul>
+        <!-- Pie Chart-->
+        <div style="width: auto; height: 400px;" data-fafen-chart
+            data-chart-options="{title: 'Prties Average Funds', pieSliceText: 'value'}" 
+            data-ng-model="filteredDataTableArray">
+        </div>
+    </tab>
+
+    <tab data-heading="Bar Chart" data-select="updateFilteredDataTableArrays()">
+        <!-- Bar Chart-->
+        <div style="width: auto; height: 400px;" data-fafen-chart
+            data-chart-type="bar"
+            data-chart-options="{title: 'Prties Average Funds', pieSliceText: 'value'}" 
+            data-ng-model="filteredBarChartDataTableArray">
+        </div>
+    </tab>
+</tabset>

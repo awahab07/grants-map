@@ -1,0 +1,1 @@
+AngularJS + OpenLayers3 map to plot grant distributions around the country.

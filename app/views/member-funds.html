@@ -1,0 +1,18 @@
+<!-- Constituencies Filter-->
+Select Members (<span>10 at max</span>)
+<multi-select 
+    data-input-model="membersMultiSelectModel"
+    data-button-label="member"
+    data-item-label="member ( party )"
+    data-tick-property="selected"
+    data-max-labels="1"
+    data-default-label="Select Members"
+    data-output-model="filteredMembersMultiSelectModel">
+</multi-select>
+
+<!-- Bar Chart-->
+<div style="width: auto; height: 400px;" data-fafen-chart
+    data-chart-type="bar"
+    data-chart-options="{title: 'Member Average Funds', pieSliceText: 'value'}" 
+    data-ng-model="filteredBarChartDataTableArray">
+</div>

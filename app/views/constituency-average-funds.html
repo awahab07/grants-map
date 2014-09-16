@@ -1,0 +1,19 @@
+<!-- Constituencies Filter-->
+Select NAs (<span class="" data-ng-class="{'bg-danger': constituencyLimitExceeds}">10 at max</span>)
+<multi-select 
+    data-input-model="constituenciesMultiSelectModel"
+    data-button-label="NA constituency_id"
+    data-item-label="constituency"
+    data-tick-property="selected"
+    data-max-labels="5"
+    data-default-label="Select Constituencies"
+    data-output-model="filteredConstituenciesMultiSelectModel"
+    data-on-item-click="onConstituencyMultiSelectItemClick">
+</multi-select>
+
+<!-- Bar Chart-->
+<div style="width: auto; height: 400px;" data-fafen-chart
+    data-chart-type="bar"
+    data-chart-options="{title: 'Constituencies Average Funds', pieSliceText: 'value'}" 
+    data-ng-model="filteredBarChartDataTableArray">
+</div>
