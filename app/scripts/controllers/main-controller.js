@@ -3,11 +3,6 @@
 angular.module('grantsApp')
 	.controller('mainController', ['$scope', '$location', 'GISDataService', function($scope, $location, GISDataService){
 		angular.extend($scope, {
-            london: {
-                lat: 51.505,
-                lon: -0.09,
-                zoom: 3
-            },
             layers: {
                 openstreetmap: {
                     type: 'tile',

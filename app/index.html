@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
-    <title>TDEA CVPA Grants</title>
+    <title>TDEA CVPA Project Outreach</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
@@ -29,15 +29,9 @@
 	
     <!-- Add your site or application content here -->
     <div class="container-fluid" data-ng-controller="mainController">
-        <openlayers center="london" layers="layers" height="400px"></openlayers>
-        <h1>Layers change tiles example</h1>
-        <p>This is a map that can change the tiles of the main layer by demand</p>
-        <form>
-            <div ng-repeat="(key, layer) in layers">
-                <input type="range" min="0" max="1" step="0.01" ng-model="layer.opacity">
-                {{ key }}
-            </div>
-        </form>
+        <openlayers 
+            layers="layers">
+        </openlayers>
     </div>
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
