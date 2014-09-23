@@ -11,7 +11,7 @@
     "angular-route": "1.2.15",
     "angular-bootstrap": "~0.11.0",
     "angular-multi-select": "~2.0.0",
-    "openlayers3": "~3.0.0-beta.1",
+    "openlayers3": "~3.0.0-gamma.4",
     "tombatossals": "*"
   },
   "devDependencies": {
